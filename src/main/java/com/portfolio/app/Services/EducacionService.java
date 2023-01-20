@@ -14,7 +14,7 @@ public class EducacionService implements IEducacionService {
     
     @Override
     public List<educacion> verEducacion() {
-        return eduRepo.findAll();
+        return (List<educacion>) eduRepo.findAll();
 }
 
     @Override

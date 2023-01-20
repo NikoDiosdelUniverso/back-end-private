@@ -15,7 +15,7 @@ public class HabilidadesService implements IHabilidadesService {
     
     @Override
     public List<habilidades> verSkills() {
-       return skillRepo.findAll();
+       return (List<habilidades>) skillRepo.findAll();
     }
 
     @Override

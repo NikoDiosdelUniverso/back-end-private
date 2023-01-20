@@ -14,7 +14,7 @@ public class ProyectosService implements IProyectosService {
 
     @Override
     public List<proyectos> verProyectos() {
-        return proRepo.findAll();
+        return (List<proyectos>) proRepo.findAll();
     }
 
     @Override

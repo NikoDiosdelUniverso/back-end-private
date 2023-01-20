@@ -14,7 +14,7 @@ public experienciaRepository expRepo;
     
     @Override
     public List<experiencia> verExperiencia() {
-        return expRepo.findAll();
+        return (List<experiencia>) expRepo.findAll();
     }
 
     @Override

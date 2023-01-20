@@ -35,7 +35,7 @@ public class personaController {
     
     @GetMapping(path = "/lista")
     public ResponseEntity<List<persona>> verPersonas() {
-        List<persona> list = personaServ.verPersonas();
+        List<persona> list = (List<persona>) personaServ.verPersonas();
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
