@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path = "/persona")
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins= "https://portfolio-abf44.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins= "https://portfolio-abf44.web.app")
 public class personaController {
 
     @Autowired
@@ -32,7 +32,7 @@ public class personaController {
         personaServ.crearPersona(pers);
         return "Saved";
     }
-
+    
     @GetMapping(path = "/lista")
     public ResponseEntity<List<persona>> verPersonas() {
         List<persona> list = personaServ.verPersonas();

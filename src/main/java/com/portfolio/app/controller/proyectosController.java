@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path="/pro")
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins= "https://portfolio-abf44.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins= "https://portfolio-abf44.web.app")
 public class proyectosController {
         @Autowired 
          private IProyectosService proServ;
