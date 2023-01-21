@@ -14,7 +14,6 @@ com\portfolio\app\autenticacion\model\Usuario.class
 com\portfolio\app\Services\ProyectosService.class
 com\portfolio\app\controller\proyectosController.class
 com\portfolio\app\model\habilidades.class
-.netbeans_automatic_build
 com\portfolio\app\model\experiencia.class
 com\portfolio\app\Services\EducacionService.class
 com\portfolio\app\model\proyectos.class
